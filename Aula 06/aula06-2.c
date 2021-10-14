@@ -12,9 +12,9 @@
 #include <stdlib.h>
 
 int main(){
-  float nota; //Declara a variável para a nota do aluno
+  float numero; //Declara a variável para um numero qualquer
 
-  printf("Qual a sua nota? "); //Exibe para usuário uma pergunta
+  printf("Qual o numero? "); //Exibe para usuário uma pergunta
   scanf("%f", &nota); //Lê a entrada de dado para a nota do aluno
 
   if (nota >= 6.0){ //Caso a nota for maior ou igual a 6
