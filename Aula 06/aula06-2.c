@@ -2,25 +2,24 @@
 @file: aula06-1.case
 @author: Joshua Barbosa
 @date: 14 Out 21
-@brief: Exercício 1 da aula 6
+@brief: Exercício 2 da aula 6
 
-1) Faça um programa que receba como entrada a nota de um aluno. O programa
- deve exibir “aprovado” caso a nota seja igual ou superior a 6, ou exibir
-  “reprovado” caso contrário.
+2) Faça um programa que receba um número e determine se ele é um número par
+ou ímpar.Obs.: Utilize o operador % que retorna o resto da divisão)
 */
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(){
-  float numero; //Declara a variável para um numero qualquer
+  int numero; //Declara a variável para um numero qualquer;
 
   printf("Qual o numero? "); //Exibe para usuário uma pergunta
-  scanf("%f", &nota); //Lê a entrada de dado para a nota do aluno
+  scanf("%i", &numero); //Lê a entrada de dado para o numero
 
-  if (nota >= 6.0){ //Caso a nota for maior ou igual a 6
-    printf("Voce foi aprovado! :)\n"); //Mostra essa mensagem para o usuário
+  if (numero%2 == 0){ //Caso o resto da divisao do numero por 2 ser igual a 0
+    printf("O numero %i eh par! :)\n", numero); //Mostra essa mensagem para o usuário
   } else { //Caso não seja
-    printf("Poxa... Voce reprovou :(\n"); //Essa mensagem será mostrada
+    printf("O numero %i eh impar! :)\n", numero); //Essa mensagem será mostrada
   }
 
   return 0;
