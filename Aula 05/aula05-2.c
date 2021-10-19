@@ -4,7 +4,7 @@
 @date: 12 Out 21
 @brief: Exercício 2 da aula 5
 
-1)  Faça um programa que calcule e mostre a idade de uma pessoa a partir do
+2)  Faça um programa que calcule e mostre a idade de uma pessoa a partir do
  ano em que a pessoa nasceu e do ano atual. Os valores serão digitados pelo
  usuário.Obs.:Considere que ela já fez aniversário neste ano.
 */
