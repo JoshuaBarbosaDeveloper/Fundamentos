@@ -1,8 +1,8 @@
 /*
-@file: aula06-1.case
+@file: aula06-3.case
 @author: Joshua Barbosa
 @date: 14 Out 21
-@brief: Exercício 2 da aula 6
+@brief: Exercício 3 da aula 6
 
 3) Faça um programa que receba os coeficientes a, b e c de uma equação do
 segundo grau e retorne as raízes da equação (se existirem).Para isso, lembre-se

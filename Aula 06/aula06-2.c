@@ -1,5 +1,5 @@
 /*
-@file: aula06-1.case
+@file: aula06-2.case
 @author: Joshua Barbosa
 @date: 14 Out 21
 @brief: Exercício 2 da aula 6
