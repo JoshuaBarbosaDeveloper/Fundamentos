@@ -12,20 +12,20 @@ e mostre o resultado da operação matemática entre eles.
 #include <stdlib.h>
 
 int main(){
-  int escolha; //Declara a variável para a escolha;
+  char escolha; //Declara a variável para a escolha;
   float num1, num2, resultado; //Declara a variável para dois numeros quaisqueres e para resultado;
 
   //Mostra para o usuário um menu
   printf("Menu do Programa Calculadora: \n");
-  printf("1 - Adicao (+) \n");
-  printf("2 - Subtracao (-) \n");
-  printf("3 - Multiplicacao (*) \n");
-  printf("4 - Divisao (/) \n");
+  printf("+ - Adicao \n");
+  printf("- - Subtracao \n");
+  printf("* - Multiplicacao \n");
+  printf("/ - Divisao \n");
   printf("Digite sua opcao: ");
-  scanf("%i", &escolha); //Lê a escolha do usuário
+  scanf("%c", &escolha); //Lê a escolha do usuário
 
   switch (escolha){ //Inicia a construção de para multiplas alternativas
-    case 1: //Caso a opcao escolhida for igual a 1
+    case '+': //Caso a opcao escolhida for igual a 1
       printf("Digite o primeiro numero: "); //Exibe uma mensagem para o usuario
       scanf("%f", &num1); //Lê a entrada do usario para num
       printf("Digite o segundo numero: "); //Exibe uma mensagem para o usuario
@@ -33,11 +33,11 @@ int main(){
 
       resultado = num1 + num2; //Realiza a soma dos 2 numeros
 
-      printf("O resultado da adicao de %2.f + %2.f = %2.f\n", num1, num2, resultado); //Exibe o resultado para o usuario
+      printf("O resultado da adicao de %2.f + %2.f = %f\n", num1, num2, resultado); //Exibe o resultado para o usuario
 
       break; //Término
 
-    case 2: //Caso a opcao escolhida for igual a 2
+    case '-': //Caso a opcao escolhida for igual a 2
       printf("Digite o primeiro numero: "); //Exibe uma mensagem para o usuario
       scanf("%f", &num1); //Lê a entrada do usario para num
       printf("Digite o segundo numero: "); //Exibe uma mensagem para o usuario
@@ -45,11 +45,11 @@ int main(){
 
       resultado = num1 - num2; //Realiza a subtracao dos 2 numeros
 
-      printf("O resultado da subtracao de %2.f - %2.f = %2.f\n", num1, num2, resultado); //Exibe o resultado para o usuario
+      printf("O resultado da subtracao de %2.f - %2.f = %f\n", num1, num2, resultado); //Exibe o resultado para o usuario
 
       break; //Término
 
-    case 3: //Caso a opcao escolhida for igual a 3
+    case '*': //Caso a opcao escolhida for igual a 3
       printf("Digite o primeiro numero: "); //Exibe uma mensagem para o usuario
       scanf("%f", &num1); //Lê a entrada do usario para num
       printf("Digite o segundo numero: "); //Exibe uma mensagem para o usuario
@@ -57,11 +57,11 @@ int main(){
 
       resultado = num1 * num2; //Realiza a multiplicacao dos 2 numeros
 
-      printf("O resultado da multiplicacao de %2.f * %2.f = %2.f\n", num1, num2, resultado); //Exibe o resultado para o usuario
+      printf("O resultado da multiplicacao de %2.f * %2.f = %f\n", num1, num2, resultado); //Exibe o resultado para o usuario
 
       break; //Término
 
-    case 4: //Caso a opcao escolhida for igual a 4
+    case '/': //Caso a opcao escolhida for igual a 4
       printf("Digite o primeiro numero: "); //Exibe uma mensagem para o usuario
       scanf("%f", &num1); //Lê a entrada do usario para num
       printf("Digite o segundo numero: "); //Exibe uma mensagem para o usuario
@@ -69,7 +69,7 @@ int main(){
 
       resultado = num1 / num2; //Realiza a divisao dos 2 numeros
 
-      printf("O resultado da divisao de %2.f / %2.f = %2.f\n", num1, num2, resultado); //Exibe o resultado para o usuario
+      printf("O resultado da divisao de %2.f / %2.f = %f\n", num1, num2, resultado); //Exibe o resultado para o usuario
 
       break; //Término
 
