@@ -15,8 +15,8 @@ int main(){
   printf("Deseja calcular o fatorial de qual numero? "); //Exibe para o usuario uma pergunta
   scanf("%i", &num); //Le o numero que o usuario quer realizar o calculo
 
-  cont = num;
-  while (cont > 1){ //Enquanto o numero digitado for maior que 0
+  cont = num; //Atribui o valor de numero para o contador
+  while (cont > 1){ //Enquanto o numero digitado for maior que 1
      resultado *= cont; //Realiza o calculo
 
      cont--; //Pós decremento;
