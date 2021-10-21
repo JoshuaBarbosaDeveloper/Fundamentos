@@ -12,7 +12,7 @@
 #include <stdlib.h>
 
 int main(){
-  float num = 1, resultado; //Declara a variável para um numero qualquer;
+  float num, resultado; //Declara a variável para um numero qualquer;
 
   while (num > 0){ //Enquanto o numero digitado for maior que 0
      //Exibe para o usuario uma pergunta
