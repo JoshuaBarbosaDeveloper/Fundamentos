@@ -2,11 +2,14 @@
 @file: ex01.case
 @author: Joshua Barbosa
 @date: 21 Out 21
-@brief: Exercício 1 da aula 9
+@brief: Exercício 1 da lista de exercícios
 
 1) Sabendo-se que 200 quilowatts de energia custa um quarto do salário mínimo,
  faça um programa que receba o valor do salário mínimo e a quantidade de
  quilowatts gasta por uma residência e mostre:
+ a) O valor em reais de cada quilowatt;
+ b) O valor em reais a ser pago pelos quilowatts gasto;
+ c) O novo valor a ser pago por essa residência com um desconto de 12%;
 */
 #include <stdio.h>
 #include <stdlib.h>
