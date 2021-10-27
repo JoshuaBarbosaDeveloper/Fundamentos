@@ -38,57 +38,48 @@ int main(){
   printf("Insira a nota da prova 1: "); //Exibe uma pergunta para o usuário
   scanf("%f", &prova1); //Lê as prova
 
-  if(prova1>100 || prova1<0){ //Caso as notas nao se encaixem no itervalo de 0 a 100:
-      do{ //Ira pedir novas notas
-          printf("Voce inseriu a nota da prova 1 errada! Tente novamente: "); //Exibe uma pergunta para o usuário
-          scanf("%f", &prova1); //Lê as provas
+     do{ //Ira pedir novas notas
+         printf("Voce inseriu a nota da prova 1 errada! Tente novamente: "); //Exibe uma pergunta para o usuário
+         scanf("%f", &prova1); //Lê as provas
 
-      } while(prova1>100 || prova1<0); //Até que se encaixe
-  }
+     } while(prova1>100 || prova1<0); //Até que se encaixe
+
 
   printf("Insira a nota da prova 2: "); //Exibe uma pergunta para o usuário
   scanf("%f", &prova2); //Lê as prova
 
-  if(prova2>100 || prova2<0){//Caso as notas nao se encaixem no itervalo de 0 a 100:
-      do{ //Ira pedir novas notas
-          printf("Voce inseriu a nota da prova 2 errada! Tente novamente: "); //Exibe uma pergunta para o usuário
-          scanf("%f", &prova2); //Lê as provas
+     do{ //Ira pedir novas notas
+         printf("Voce inseriu a nota da prova 2 errada! Tente novamente: "); //Exibe uma pergunta para o usuário
+         scanf("%f", &prova2); //Lê as provas
 
-      } while(prova2>100 || prova2<0); //Até que se encaixe
-  }
+     } while(prova2>100 || prova2<0); //Até que se encaixe
 
   printf("Insira a nota da prova 3: "); //Exibe uma pergunta para o usuário
   scanf("%f", &prova3); //Lê as prova
 
-  if(prova3>100 || prova3<0){ //Caso as notas nao se encaixem no itervalo de 0 a 100:
-      do{ //Ira pedir novas notas
-          printf("Voce inseriu a nota da prova 3 errada! Tente novamente: "); //Exibe uma pergunta para o usuário
-          scanf("%f", &prova3); //Lê as provas
+     do{ //Ira pedir novas notas
+         printf("Voce inseriu a nota da prova 3 errada! Tente novamente: "); //Exibe uma pergunta para o usuário
+         scanf("%f", &prova3); //Lê as provas
 
-      } while(prova3>100 || prova3<0); //Até que se encaixe
-  }
+     } while(prova3>100 || prova3<0); //Até que se encaixe
 
   printf("Insira a nota total dos trabalhos menores: "); //Exibe uma pergunta para o usuário
   scanf("%f", &trabalho); //Lê o trabalho
 
-  if(trabalho>100 || trabalho<0){  //Caso as notas nao se encaixem no itervalo de 0 a 100:
-      do{ //Ira pedir novas notas
-          printf("Voce inseriu a nota dos trabalhos errada! Tente novamente: "); //Exibe uma pergunta para o usuário
-          scanf("%f", &trabalho); //Lê as provas
+     do{ //Ira pedir novas notas
+         printf("Voce inseriu a nota dos trabalhos errada! Tente novamente: "); //Exibe uma pergunta para o usuário
+         scanf("%f", &trabalho); //Lê as provas
 
-      } while(trabalho>100 || trabalho<0); //Até que se encaixe
-  }
+     } while(trabalho>100 || trabalho<0); //Até que se encaixe
 
   printf("Insira a nota do projeto do jogo: "); //Exibe uma pergunta para o usuário
   scanf("%f", &projeto); //Lê o trabalho
 
-  if(projeto>100 || projeto<0){ //Caso as notas nao se encaixem no itervalo de 0 a 100:
-      do{ //Ira pedir novas notas
-          printf("Voce inseriu a nota do projeto errada! Tente novamente: "); //Exibe uma pergunta para o usuário
-          scanf("%f", &projeto); //Lê as provas
+     do{ //Ira pedir novas notas
+         printf("Voce inseriu a nota do projeto errada! Tente novamente: "); //Exibe uma pergunta para o usuário
+         scanf("%f", &projeto); //Lê as provas
 
-      } while(projeto>100 || projeto<0); //Até que se encaixe
-  }
+     } while(projeto>100 || projeto<0); //Até que se encaixe
 
   media = (((prova1 + prova2 + prova3)*20)+(trabalho*10)+(projeto*30))/100;//Realiza o calculo da media ponderada
 
