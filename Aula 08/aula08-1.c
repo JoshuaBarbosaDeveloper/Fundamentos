@@ -10,7 +10,7 @@
 #include <stdlib.h>
 
 int main(){
-  int cont = 0; //Declara a variável para o contador;
+  int cont = 1; //Declara a variável para o contador;
 
   while (cont <= 100){ //Enquanto o contador for menor ou igual a 100
       printf("%i\n", cont); //Mostra o valor de cont para o usuario

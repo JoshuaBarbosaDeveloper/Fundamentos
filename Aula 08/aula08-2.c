@@ -12,7 +12,7 @@
 int main(){
   int cont = 100; //Declara a variável para o contador;
 
-  while (cont >= 0){ //Enquanto o contador for maior ou igual a 0
+  while (cont >= 1){ //Enquanto o contador for maior ou igual a 0
       printf("%i\n", cont); //Mostra o valor de cont para o usuario
       cont--; //Pós decremento;
   } //Fim while
