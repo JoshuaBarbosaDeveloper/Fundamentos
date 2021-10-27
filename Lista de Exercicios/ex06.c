@@ -32,18 +32,82 @@ aluno está aprovado ou reprovado e qual sua nota final (com uma casa decimal).
 
 int main(){
 
-  float numerador, denominador;  //Declara a variável para o numerador e denominador;
+  float prova1, prova2, prova3, trabalho, projeto, media, exame, notaminima;  //Declara as variáveis para provas, trabalho, exame e para a media;
   //setbuf(stdin, NULL); - Apagar o buffer
 
-  printf("Insira a fracao (x/y): "); //Exibe uma pergunta para o usuário
-  scanf("%f/%f", &numerador, &denominador); //Lê o denominador
+  printf("Insira a nota da prova 1: "); //Exibe uma pergunta para o usuário
+  scanf("%f", &prova1); //Lê as prova
 
-  if ((int)numerador%(int)denominador == 0) {
-      printf("%.2f/%.2f eh uma fracao aparente!\n", numerador, denominador);
-  } else if (numerador < denominador) {
-      printf("%.2f/%.2f eh uma fracao propria!\n", numerador, denominador);
-  } else if (numerador > denominador) {
-      printf("%.2f/%.2f eh uma fracao impropria!\n", numerador, denominador);
+  if(prova1>100 || prova1<0){ //Caso as notas nao se encaixem no itervalo de 0 a 100:
+      do{ //Ira pedir novas notas
+          printf("Voce inseriu a nota da prova 1 errada! Tente novamente: "); //Exibe uma pergunta para o usuário
+          scanf("%f", &prova1); //Lê as provas
+
+      } while(prova1>100 || prova1<0); //Até que se encaixe
+  }
+
+  printf("Insira a nota da prova 2: "); //Exibe uma pergunta para o usuário
+  scanf("%f", &prova2); //Lê as prova
+
+  if(prova2>100 || prova2<0){//Caso as notas nao se encaixem no itervalo de 0 a 100:
+      do{ //Ira pedir novas notas
+          printf("Voce inseriu a nota da prova 2 errada! Tente novamente: "); //Exibe uma pergunta para o usuário
+          scanf("%f", &prova2); //Lê as provas
+
+      } while(prova2>100 || prova2<0); //Até que se encaixe
+  }
+
+  printf("Insira a nota da prova 3: "); //Exibe uma pergunta para o usuário
+  scanf("%f", &prova3); //Lê as prova
+
+  if(prova3>100 || prova3<0){ //Caso as notas nao se encaixem no itervalo de 0 a 100:
+      do{ //Ira pedir novas notas
+          printf("Voce inseriu a nota da prova 3 errada! Tente novamente: "); //Exibe uma pergunta para o usuário
+          scanf("%f", &prova3); //Lê as provas
+
+      } while(prova3>100 || prova3<0); //Até que se encaixe
+  }
+
+  printf("Insira a nota total dos trabalhos menores: "); //Exibe uma pergunta para o usuário
+  scanf("%f", &trabalho); //Lê o trabalho
+
+  if(trabalho>100 || trabalho<0){  //Caso as notas nao se encaixem no itervalo de 0 a 100:
+      do{ //Ira pedir novas notas
+          printf("Voce inseriu a nota dos trabalhos errada! Tente novamente: "); //Exibe uma pergunta para o usuário
+          scanf("%f", &trabalho); //Lê as provas
+
+      } while(trabalho>100 || trabalho<0); //Até que se encaixe
+  }
+
+  printf("Insira a nota do projeto do jogo: "); //Exibe uma pergunta para o usuário
+  scanf("%f", &projeto); //Lê o trabalho
+
+  if(projeto>100 || projeto<0){ //Caso as notas nao se encaixem no itervalo de 0 a 100:
+      do{ //Ira pedir novas notas
+          printf("Voce inseriu a nota do projeto errada! Tente novamente: "); //Exibe uma pergunta para o usuário
+          scanf("%f", &projeto); //Lê as provas
+
+      } while(projeto>100 || projeto<0); //Até que se encaixe
+  }
+
+  media = (((prova1 + prova2 + prova3)*20)+(trabalho*10)+(projeto*30))/100;//Realiza o calculo da media ponderada
+
+  if (media >= 60){ //Caso a media for maior/igual que 60
+      printf("Parabens! Voce foi aprovado com uma media de %2.f! :)", media); //Exibe para o usuario a aprovação
+  } else { //Se for menor
+      //Exibe para o usuario a necessidade da realizacao do exame
+      printf("Infelizmente voce nao atingiu a nota suficiente... Realize o exame e nos informe usa nota: ");
+      //Le a nota do exame
+      scanf("%f", &exame);
+
+      notaminima = (120-media); //Faz o calculo para a notaminima
+
+      if(exame >= notaminima){ //Caso a nota do exame for maior/igual
+          printf("Parabens! Agora sim voce foi aprovado! :)");//Exibe que ele foi aprovado
+      } else { //Se nao
+          printf("Que pena! Voce reprovou... :("); //Reprovado
+      }
+
   }
 
   return 0;
