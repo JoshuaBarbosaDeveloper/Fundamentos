@@ -17,16 +17,24 @@ int main(){
   float media, nota; //Declara a variável para notas e media;
 
   do { //Faça
-      printf("Qual a primeira nota do aluno %i? ", cont); //Mostrar esse texto para o usuário
-      scanf("%f", &nota); //Receber a nota
+      do{ //Pegar a nota enquanto estiver fora do pedido
+          printf("Qual a primeira nota do aluno %i? ", cont); //Mostrar esse texto para o usuário
+          scanf("%f", &nota); //Receber a nota
+      } while(nota<0 || nota>10);
       media = nota; //Atribuir o valor da nota na média
-      printf("Qual a segunda nota do aluno %i? ", cont); //Mostrar esse texto para o usuário
-      scanf("%f", &nota); //Receber a nota
+
+      do{ //Pegar a nota enquanto estiver fora do pedido
+          printf("Qual a segunda nota do aluno %i? ", cont); //Mostrar esse texto para o usuário
+          scanf("%f", &nota); //Receber a nota
+
+      } while(nota<0 || nota>10);
       media = (media+nota)/2.0;  //Atribuir o valor da nota com a antiga e dividir por 2
       printf("A media do aluno %i eh de: %.2f\n\n", cont, media); //Mostrar a média para o usuário
       cont++; //Novo valor para cont
 
   } while (cont < 6); //Enquanto o contador for menor que 6
+
+
 
   return 0;
 }//main

@@ -20,7 +20,7 @@ int main(){
       scanf("%i", &valor); //Receber o valor
       cont++;
 
-  } while (valor > 500 && valor < 1000 ); //Enquanto o contador for menor que 6
+  } while (valor > 499 && valor < 1001 ); //Enquanto o contador for menor que 6
 
   printf("Foram digitados %i valores validos! Obrigado por utilizar nosso software.\n", cont-1); //Mostrar esse texto para o usuário
 
