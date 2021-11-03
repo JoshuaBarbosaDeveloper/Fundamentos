@@ -15,11 +15,81 @@ Valor por extenso: setenta e quatro
 
 
 int main(){
-    int num;
-    printf("Digite um numero: ");
+    int num, dezena, unidade;
+
+    do{
+        printf("Digite um numero: ");
+        scanf("%i", &num);
+    } while (num<1 || num >99);
+
     printf("Valor por extenso: ");
 
-    swicth (num){
+    dezena = (num-(num%10))/10;
+    unidade = num%10;
+
+    switch (num){
+        case 10:
+            printf("dez\n");
+            return 0;
+        case 11:
+            printf("onze\n");
+            return 0;
+        case 12:
+            printf("doze\n");
+            return 0;
+        case 13:
+            printf("treze\n");
+            return 0;
+        case 14:
+            printf("quatorze\n");
+            return 0;
+        case 15:
+            printf("quinze\n");
+            return 0;
+        case 16:
+            printf("dezesseis\n");
+            return 0;
+        case 17:
+            printf("dezessete\n");
+            return 0;
+        case 18:
+            printf("dezoito\n");
+            return 0;
+        case 19:
+            printf("dezenove\n");
+            return 0;
+
+    }
+
+    switch (dezena) {
+        case 2:
+            printf("vinte ");
+            break;
+        case 3:
+            printf("trinta ");
+            break;
+        case 4:
+            printf("quarenta ");
+            break;
+        case 5:
+            printf("cinquenta ");
+            break;
+        case 6:
+            printf("sessenta ");
+            break;
+        case 7:
+            printf("setenta ");
+            break;
+        case 8:
+            printf("oitenta ");
+            break;
+        case 9:
+            printf("noventa ");
+            break;
+
+    }
+
+    switch (unidade) {
         case 1:
             printf("um\n");
             break;
@@ -50,36 +120,10 @@ int main(){
         case 10:
             printf("dez\n");
             break;
-        case 11:
-            printf("onze\n");
-            break;
-        case 12:
-            printf("doze\n");
-            break;
-        case 13:
-            printf("treze\n");
-            break;
-        case 14:
-            printf("quatorze\n");
-            break;
-        case 15:
-            printf("quinze\n");
-            break;
-        case 16:
-            printf("dezesseis\n");
-            break;
-        case 17:
-            printf("dezessete\n");
-            break;
-        case 18:
-            printf("dezoito\n");
-            break;
-        case 19:
-            printf("dezenove\n");
-            break;
-        case 20:
-            printf("vinte\n");
-            break;
+
     }
+
+    printf("\n");
+
   return 0;
 }//main
