@@ -19,13 +19,13 @@ int main(){
 
   printf("\n");
 
-  for (counter=1; counter<=size; counter++){ //Enquanto contador for menor que 10
+  for (counter=1; counter<=size; counter++){ //Enquanto contador for menor que size
 
-      printf("# "); //Exibe um texto
+      printf("# "); //Exibe #;
 
-      for (counter_two=1; counter_two<size; counter_two++){ //Enquanto o contador 2 for menor que 10;
+      for (counter_two=1; counter_two<size; counter_two++){ //Enquanto o contador 2 for menor que size;
 
-          printf("# "); //Exibe a multiplicação;
+          printf("# "); //Exibe #;
 
       }
       printf("\n");
