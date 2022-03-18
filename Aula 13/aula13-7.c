@@ -19,7 +19,7 @@ int main(){
   //Variavel para percorrer linha;
   int line;
 
-  //Le a sigla;
+  //Le a silg;
   printf("Insira uma sigla de um estado da regiao Sul/Sudeste: ");
   fgets(acronymsRecieve, 21, stdin);
   acronymsRecieve[strcspn(acronymsRecieve,"\n")] = '\0';
