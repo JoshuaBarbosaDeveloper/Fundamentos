@@ -1,12 +1,14 @@
-/*
-@file: aula14-1.case
-@author: Joshua Barbosa
-@date: 26 Nov 21
-@brief: Exercício 1 da aula 14
-
-1) Faça um algoritmo que implemente uma função que receba 3 números inteiros e
- retorne o maior valor;
-*/
+/**
+ * @file aula16-1.c
+ * @author Joshua Barbosa
+ * @brief 1) Faça um algoritmo que implemente uma função que receba 3 números
+          inteiros e retorne o maior valor;
+ * @version 0.1
+ * @date 2022-03-23
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -21,8 +23,8 @@
 */
 
 int checkerBigger(int number1, int number2, int number3){
-    //Variavel para armazenar o maior numero;
-    int bigger = 0;
+    //Variavel auxiliar para armazenar o maior numero;
+    int bigger = number1;
 
     //Comparação para achar o maior número;
     if(bigger < number1){
@@ -42,7 +44,7 @@ int main(){
     //Declara 3 variáveis do tipo inteiro;
     int numbers[3] = {0, 0, 0}, big;
 
-    printf("Insira 3 numero: \n");
+    printf("Insira 3 numeros: \n");
 
     //Ler o valor inserido
     for (int i = 0; i<3; i++){
