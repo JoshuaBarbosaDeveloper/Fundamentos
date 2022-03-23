@@ -1,16 +1,17 @@
-/*
-@file: aula14-2.case
-@author: Joshua Barbosa
-@date: 26 Nov 21
-@brief: Exercício 2 da aula 14
-
-2) Elabore uma função que receba por parâmetro o sexo (caractere) e a altura
-de uma pessoa (real), calcule e retorne seu peso ideal. Para isso, utilize as
- fórmulas a seguir.
- Para homens: (72.7 * altura) - 58
- Para mulheres:
- (62.1 * altura) - 44.7
-*/
+/**
+ * @file aula16-2.c
+ * @author Joshua Barbosa
+ * @brief 2) Elabore uma função que receba por parâmetro o sexo (caractere) e a
+    altura de uma pessoa (real), calcule e retorne seu peso ideal. Para isso,
+    utilize as fórmulas a seguir.
+    - Para homens: (72.7 * altura) - 58
+    - Para mulheres: (62.1 * altura) - 44.7
+ * @version 0.1
+ * @date 2022-03-23
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
