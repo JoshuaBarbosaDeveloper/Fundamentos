@@ -1,15 +1,17 @@
-/*
-@file: aula14-3.case
-@author: Joshua Barbosa
-@date: 26 Nov 21
-@brief: Exercício 3 da aula 14
-
-3) Escreva um procedimento que recebe por parâmetro as 3 notas de um aluno e
-uma letra. Se a letra for A, o procedimento calcula a média aritmética das notas
- do aluno, se for P, a sua média ponderada (pesos: 5, 3 e 2) e se for S, a soma
-  das notas. O valor calculado também deve ser retornado e exibido na função
-   main.
-*/
+/**
+ * @file aula16-3.c
+ * @author Joshua Barbosa
+ * @brief 3) Escreva um procedimento que recebe por parâmetro as 3 notas de um
+    aluno e uma letra. Se a letra for A, o procedimento calcula a média
+    aritmética das notas do aluno, se for P, a sua média ponderada (pesos: 5, 3
+    e 2) e se for S, a soma das notas. O valor calculado também deve ser
+    retornado e exibido na função main.
+ * @version 0.1
+ * @date 2022-03-23
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -29,8 +31,7 @@ float school(float note1, float note2, float note3, char choice){
         case 'A':
         case 'a':
             //Realiza e retorna a média aritmética;
-            result = (note1+note2+note3)/3;
-            return result;
+            return ((note1+note2+note3)/3);
 
         case 'P':
         case 'p':
